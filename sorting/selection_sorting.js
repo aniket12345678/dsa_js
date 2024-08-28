@@ -8,6 +8,7 @@ function selectionSort(data) {
         data[i] = output;
         data[index] = temp;
     }
+    return data;
 }
 
 function minimum(data) {
@@ -20,4 +21,5 @@ function minimum(data) {
     return store;
 }
 
-selectionSort(sampleArray);
+const output = selectionSort(sampleArray);
+console.log('output:- ', output);
